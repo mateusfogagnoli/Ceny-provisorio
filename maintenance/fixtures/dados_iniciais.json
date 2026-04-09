@@ -1,0 +1,175 @@
+[
+  {
+    "model": "maintenance.empresa",
+    "pk": 1,
+    "fields": {
+      "nome": "Indústria XYZ Ltda",
+      "created_at": "2026-04-08T10:00:00Z",
+      "updated_at": "2026-04-08T10:00:00Z"
+    }
+  },
+  {
+    "model": "maintenance.empresa",
+    "pk": 2,
+    "fields": {
+      "nome": "Manufatura ABC S.A.",
+      "created_at": "2026-04-08T10:00:00Z",
+      "updated_at": "2026-04-08T10:00:00Z"
+    }
+  },
+  {
+    "model": "maintenance.setor",
+    "pk": 1,
+    "fields": {
+      "nome": "Usinagem",
+      "empresa": 1,
+      "created_at": "2026-04-08T10:00:00Z",
+      "updated_at": "2026-04-08T10:00:00Z"
+    }
+  },
+  {
+    "model": "maintenance.setor",
+    "pk": 2,
+    "fields": {
+      "nome": "Montagem",
+      "empresa": 1,
+      "created_at": "2026-04-08T10:00:00Z",
+      "updated_at": "2026-04-08T10:00:00Z"
+    }
+  },
+  {
+    "model": "maintenance.setor",
+    "pk": 3,
+    "fields": {
+      "nome": "Soldagem",
+      "empresa": 2,
+      "created_at": "2026-04-08T10:00:00Z",
+      "updated_at": "2026-04-08T10:00:00Z"
+    }
+  },
+  {
+    "model": "maintenance.equipamento",
+    "pk": 1,
+    "fields": {
+      "tag": "EQ-001",
+      "nome": "Torno CNC Horizontal",
+      "status": "operacional",
+      "setor": 1,
+      "created_at": "2026-04-08T10:00:00Z",
+      "updated_at": "2026-04-08T10:00:00Z"
+    }
+  },
+  {
+    "model": "maintenance.equipamento",
+    "pk": 2,
+    "fields": {
+      "tag": "EQ-002",
+      "nome": "Centro de Usinagem Vertical",
+      "status": "operacional",
+      "setor": 1,
+      "created_at": "2026-04-08T10:00:00Z",
+      "updated_at": "2026-04-08T10:00:00Z"
+    }
+  },
+  {
+    "model": "maintenance.equipamento",
+    "pk": 3,
+    "fields": {
+      "tag": "EQ-003",
+      "nome": "Fresadora Universal",
+      "status": "manutencao",
+      "setor": 1,
+      "created_at": "2026-04-08T10:00:00Z",
+      "updated_at": "2026-04-08T10:00:00Z"
+    }
+  },
+  {
+    "model": "maintenance.equipamento",
+    "pk": 4,
+    "fields": {
+      "tag": "EQ-004",
+      "nome": "Robô Manipulador",
+      "status": "operacional",
+      "setor": 2,
+      "created_at": "2026-04-08T10:00:00Z",
+      "updated_at": "2026-04-08T10:00:00Z"
+    }
+  },
+  {
+    "model": "maintenance.equipamento",
+    "pk": 5,
+    "fields": {
+      "tag": "EQ-005",
+      "nome": "Máquina de Solda MIG",
+      "status": "parado",
+      "setor": 3,
+      "created_at": "2026-04-08T10:00:00Z",
+      "updated_at": "2026-04-08T10:00:00Z"
+    }
+  },
+  {
+    "model": "maintenance.ordemservico",
+    "pk": 1,
+    "fields": {
+      "titulo": "Revisão preventiva",
+      "status": "Aberta",
+      "equipamento": 1,
+      "data_abertura": "2026-04-08T11:00:00Z",
+      "data_conclusao": null,
+      "created_at": "2026-04-08T11:00:00Z",
+      "updated_at": "2026-04-08T11:00:00Z"
+    }
+  },
+  {
+    "model": "maintenance.ordemservico",
+    "pk": 2,
+    "fields": {
+      "titulo": "Substituição de correia",
+      "status": "Em andamento",
+      "equipamento": 2,
+      "data_abertura": "2026-04-07T14:00:00Z",
+      "data_conclusao": null,
+      "created_at": "2026-04-07T14:00:00Z",
+      "updated_at": "2026-04-08T09:00:00Z"
+    }
+  },
+  {
+    "model": "maintenance.ordemservico",
+    "pk": 3,
+    "fields": {
+      "titulo": "Limpeza geral",
+      "status": "Concluída",
+      "equipamento": 3,
+      "data_abertura": "2026-04-06T10:00:00Z",
+      "data_conclusao": "2026-04-08T08:00:00Z",
+      "created_at": "2026-04-06T10:00:00Z",
+      "updated_at": "2026-04-08T08:00:00Z"
+    }
+  },
+  {
+    "model": "maintenance.ordemservico",
+    "pk": 4,
+    "fields": {
+      "titulo": "Calibração de sensores",
+      "status": "Aberta",
+      "equipamento": 4,
+      "data_abertura": "2026-04-08T10:30:00Z",
+      "data_conclusao": null,
+      "created_at": "2026-04-08T10:30:00Z",
+      "updated_at": "2026-04-08T10:30:00Z"
+    }
+  },
+  {
+    "model": "maintenance.ordemservico",
+    "pk": 5,
+    "fields": {
+      "titulo": "Reparo de fiação elétrica",
+      "status": "Aberta",
+      "equipamento": 5,
+      "data_abertura": "2026-04-08T09:00:00Z",
+      "data_conclusao": null,
+      "created_at": "2026-04-08T09:00:00Z",
+      "updated_at": "2026-04-08T09:00:00Z"
+    }
+  }
+]
