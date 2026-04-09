@@ -1,7 +1,4 @@
-# 🔧 CENY - Sistema de Gestão de Manutenção Industrial
-
-MVP moderno para gestão de manutenção industrial com **Django REST Framework** (backend) e **Vue.js 3** (frontend).
-
+# CENY
 ## 📦 Stack
 
 | Componente | Tecnologia |
@@ -103,39 +100,8 @@ npm install
 
 ---
 
-## ❓ FAQ
-
-**P: Como limpar o banco de dados?**
-```bash
-rm db.sqlite3
-python manage.py migrate
-python load_initial_data.py
-```
-
-**P: Como criar um super usuário para o admin?**
-```bash
-python manage.py createsuperuser
-# Acesse: http://127.0.0.1:8000/admin
-```
-
-**P: Posso usar PostgreSQL em vez de SQLite?**
-Sim! Atualize `settings.py` para usar PostgreSQL. SQLite é perfeito para desenvolvimento.
-
-**P: Como fazer deploy em produção?**
-Veja a documentação oficial:
-- Django: https://docs.djangoproject.com/en/6.0/howto/deployment/
-- Vue: https://vitejs.dev/guide/build.html
-
----
-
 ## 📝 Sobre o db.sqlite3
 
-### Por que NÃO deve estar no GitHub?
-
-1. **Dados Locais**: O banco contém dados de desenvolvimento específicos da máquina
-2. **Tamanho**: Pode crescer significativamente
-3. **Conflitos**: Diferentes devs podem ter versões diferentes
-4. **Segurança**: Melhor prática é não versionar dados sensíveis
 
 ### Como funciona sem db.sqlite3
 
@@ -143,47 +109,4 @@ Veja a documentação oficial:
 2. Execute `python manage.py migrate` para criar um novo banco vazio
 3. (Opcional) Execute `python load_initial_data.py` para dados de teste
 
-### .gitignore já configurado
-
-O arquivo `.gitignore` já existe no repositório e exclui:
-```
-db.sqlite3
-venv/
-__pycache__/
-*.pyc
-.env
-```
-
 ---
-
-## 🤝 Contribuindo
-
-1. Faça um Fork do projeto
-2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
-3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
-4. Push para a branch (`git push origin feature/AmazingFeature`)
-5. Abra um Pull Request
-
----
-
-## 📄 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
----
-
-## 👨‍💻 Autor
-
-Desenvolvido como um MVP para aprender Django REST Framework e Vue.js 3.
-
----
-
-## 📧 Suporte
-
-Encontrou um bug? Abra uma [Issue](https://github.com/seu-usuario/ceny/issues)!
-
----
-
-**Versão:** 0.1.0  
-**Data:** Abril de 2026  
-**Status:** MVP Completo ✅
